@@ -1,6 +1,4 @@
-// import { futimes } from "graceful-fs";
 import React from "react";
-// import recipes from "../recipes";
 import Swal from "sweetalert2";
 import Specials from "./Specials";
 
@@ -9,7 +7,6 @@ export default function Menu() {
     console.log(id, "id is clicked");
     Swal.fire({
       title: "Order this food?",
-      // text: "You won't be able to revert this!",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",

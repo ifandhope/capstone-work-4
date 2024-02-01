@@ -1,30 +1,3 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import Heroimg from "../images/Heroimg.jpg";
-
-// export default function Header() {
-//   return (
-//     <header className="header">
-//       <section>
-//         <div className="banner">
-//           <h2>Little Lemon</h2>
-//           <h3>Chicago</h3>
-//           <p>
-//             Little Lemon is a family owned Mediterraneran restaurant, focused on
-//             traditonal recipes served with a moder twist.
-//           </p>
-//           <Link to="/booking">
-//             <button aria-label="on Click">Reserve Table</button>
-//           </Link>
-//         </div>
-//         <div className="banner-img">
-//           <img src={Heroimg} alt="" />
-//         </div>
-//       </section>
-//     </header>
-//   );
-// }
-
 import React from "react";
 import { Link } from "react-router-dom";
 

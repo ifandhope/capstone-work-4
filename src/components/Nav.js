@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "../images/Logo.svg";
 import { useState } from "react";
-// import "./Nav.css";
 
 export default function Nav() {
   const [linkOpen, setLinkOpen] = useState(false);

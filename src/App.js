@@ -14,8 +14,6 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      {/* <Header /> */}
-      {/* <BookingForm /> */}
       <Router>
         <Routes>
           <Route path="*" element={<Main />} />
