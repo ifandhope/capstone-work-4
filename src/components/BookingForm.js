@@ -37,6 +37,7 @@ export default function BookingForm(props) {
                 id="book-time"
                 value={times}
                 onChange={(e) => setTimes(e.target.value)}
+                required
               >
                 <option value="">Select a Time:</option>
                 {props.availableTimes.availableTimes.map((availableTimes) => {
@@ -54,6 +55,7 @@ export default function BookingForm(props) {
                 min="1"
                 max="15"
                 onChange={(e) => setGuests(e.target.value)}
+                required
               />
             </div>
             <div>
@@ -70,11 +72,7 @@ export default function BookingForm(props) {
               </select>
             </div>
             <div className="btnReceive">
-              <input
-                aria-label="onClick"
-                type="submit"
-                value={"book for your reservation"}
-              />
+              <input aria-label="onClick" type="submit" value={"Submit"} />
             </div>
           </fieldset>
         </form>
