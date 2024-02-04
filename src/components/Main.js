@@ -54,7 +54,7 @@ export default function Main() {
             <Booking
               availableTimes={state}
               dispatch={dispatch}
-              submitForm={submitForm}
+              SubmitForm={submitForm}
             />
           }
         />

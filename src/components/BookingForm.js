@@ -10,6 +10,7 @@ export default function BookingForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     props.SubmitForm(e);
+    console.log("Form submitted");
   };
 
   const handleChange = (e) => {
@@ -71,8 +72,16 @@ export default function BookingForm(props) {
                 <option>Family Gathering</option>
               </select>
             </div>
-            <div className="btnReceive">
-              <input aria-label="onClick" type="submit" value={"Submit"} />
+            <div>
+              {/* <input aria-label="onClick" type="submit" value={"Submit"} /> */}
+              <button
+                className="btnReceive"
+                aria-label="onClick"
+                type="submit"
+                value={"Submit"}
+              >
+                Submit
+              </button>
             </div>
           </fieldset>
         </form>

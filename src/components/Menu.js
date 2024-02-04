@@ -6,19 +6,22 @@ export default function Menu() {
   const handleOrder = (id) => {
     console.log(id, "id is clicked");
     Swal.fire({
-      title: "Order this food?",
-      icon: "warning",
+      title: "Order now?",
+      showDenyButton: true,
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, order it!",
+      confirmButtonText: "Yes",
+      denyButtonText: "No",
+      customClass: {
+        actions: "my-actions",
+        cancelButton: "order-1 right-gap",
+        confirmButton: "order-2",
+        denyButton: "order-3",
+      },
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire({
-          title: "Ordered!",
-          text: "Your order has been confirmed!",
-          icon: "success",
-        });
+        Swal.fire("Ordered!", "", "success");
+      } else if (result.isDenied) {
+        Swal.fire("Orders not completed!", "", "info");
       }
     });
   };
@@ -26,7 +29,6 @@ export default function Menu() {
     <div className="menu-container">
       <div className="menu-header">
         <h2>This weeks special!</h2>
-        <button>Order Menu</button>
       </div>
       <div className="cards">
         {Specials.map((Special) => (

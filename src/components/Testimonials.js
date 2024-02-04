@@ -7,7 +7,7 @@ const Testimonials = [
   {
     id: 1,
     name: "Sam Smith",
-    location: "Burnaby",
+    location: "Vancouver",
     text: "I was so pleased with the service and food I received from this restaurant.",
     rating: 5,
     image: customer1,
