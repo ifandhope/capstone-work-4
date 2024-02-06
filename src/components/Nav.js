@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Nav() {
   const [linkOpen, setLinkOpen] = useState(false);
 
-  const toggleMenu = () => {
+  const toggleBar = () => {
     setLinkOpen(!linkOpen);
   };
 
@@ -14,7 +14,7 @@ export default function Nav() {
       <a href="/" className="logo">
         <img src={Logo} alt="logo" />
       </a>
-      <div className="menu-icon" onClick={toggleMenu}>
+      <div className="menu-icon" onClick={toggleBar}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
