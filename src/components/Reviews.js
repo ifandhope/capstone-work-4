@@ -2,7 +2,7 @@ import React from "react";
 import Testimonials from "./Testimonials";
 import StarRating from "./StarRating";
 
-const Reviews = () => {
+export default function Reviews() {
   return (
     <div className="review-container">
       <div className="review-header">
@@ -35,6 +35,4 @@ const Reviews = () => {
       </div>
     </div>
   );
-};
-
-export default Reviews;
+}

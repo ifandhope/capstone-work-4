@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 import Specials from "./Specials";
 
 export default function Menu() {
-  const handleOrder = (id) => {
+  const handleClick = (id) => {
     console.log(id, "id is clicked");
     Swal.fire({
       title: "Order now?",
@@ -42,7 +42,7 @@ export default function Menu() {
               <p>{Special.description}</p>
               <button
                 className="orderBtn"
-                onClick={() => handleOrder(Special.id)}
+                onClick={() => handleClick(Special.id)}
               >
                 Order Now
               </button>

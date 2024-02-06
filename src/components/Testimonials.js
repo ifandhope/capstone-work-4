@@ -15,7 +15,7 @@ const Testimonials = [
   {
     id: 2,
     name: "Heather",
-    location: "L.A",
+    location: "LA",
     text: "The menu is consistently outstanding, exceeding my expectations every time.",
     rating: 4,
     image: customer2,

@@ -20,7 +20,7 @@ export default function BookingForm(props) {
   return (
     <header>
       <section>
-        <form onSubmit={handleSubmit}>
+        <form className="book-form" onSubmit={handleSubmit}>
           <fieldset>
             <div>
               <label htmlFor="book-date">Choose Date:</label>
@@ -67,13 +67,13 @@ export default function BookingForm(props) {
                 value={occasion}
                 onChange={(e) => setOccasion(e.target.value)}
               >
+                <option>--</option>
                 <option>Birthday</option>
                 <option>Anniversary</option>
                 <option>Family Gathering</option>
               </select>
             </div>
             <div>
-              {/* <input aria-label="onClick" type="submit" value={"Submit"} /> */}
               <button
                 className="btnReceive"
                 aria-label="onClick"
