@@ -66,10 +66,10 @@ nav ul li a:hover {
   }
 
   .nav-links {
-    /* position: static; */
+    position: static;
     display: none;
     width: 100%;
-    /* background-color: #9fcfb1; */
+
     padding: 0;
   }
 
@@ -143,6 +143,11 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
+.btn_reserve:hover {
+  color: white;
+  background-color: #9fcfb1;
+}
+
 .banner img {
   max-width: 100%;
   height: auto;
@@ -176,7 +181,6 @@ label {
 #book-time,
 #book-guests,
 #book-occasion {
-  /* background-color: #bdbdbd2f; */
   padding: 5px 10px;
   border: none;
   outline: auto;
@@ -268,6 +272,10 @@ label {
   border-radius: 20px;
 }
 
+.orderBtn:hover {
+  color: #edefff;
+  background-color: #495e57;
+}
 /*  */
 
 .review-container {
@@ -299,6 +307,7 @@ label {
   width: 200px;
   padding-top: 10px;
 }
+
 .aboutSection {
   background-color: #9fcfb1;
   font-family: Karla;
@@ -315,7 +324,7 @@ label {
 .footerRow {
   padding-top: 50px;
   display: flex;
-  /* justify-content: space-between; */
+
   align-items: start;
   font-family: Karla;
   text-align: left;
