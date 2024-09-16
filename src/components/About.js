@@ -11,7 +11,7 @@ export default function About() {
           <div className="col-lg-6 text-center">
             <div>
               <h3 className="aboutTitle">Little Lemon</h3>
-              <h5 className="aboutLocation">Chicago</h5>
+              <h5 className="aboutLocation">Vancouver</h5>
               <p className="aboutDescription">
                 Little Lemon is a family-owned Mediterranean restaurant. Adrian
                 and Mario are brothers and have been working together for about

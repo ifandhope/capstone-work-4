@@ -11,7 +11,7 @@ export default function Header() {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <h2>Little Lemon</h2>
-              <h3>Chicago</h3>
+              <h3>Vancouver</h3>
               <p>
                 Little Lemon is a family owned Mediterranean restaurant, focused
                 on traditional recipes served with a modern twist.
